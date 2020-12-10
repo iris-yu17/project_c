@@ -1,0 +1,732 @@
+@import 'Ru/Pages/variable.scss';
+
+// ------------------------------------------- 網頁版 s -------------------------------------------
+// @media screen and (min-width: 1201px) {
+@media screen and (min-width: 576.1px) {
+  .ru-box-warp .st0 {
+    stroke: none;
+  }
+
+  .ru-custom-containerA {
+    // 超過設計稿部份
+    // background-color: rgb(0, 185, 71);
+    overflow: hidden; // 遮蔽背景圖
+    padding-top: 90px;
+    margin-bottom: 60px; // footer距離
+    position: relative;
+  }
+
+  .ru-custom-containerA > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 1920px;
+  }
+
+  .ru-custom-warp {
+    // 1440區
+    // background-color: rgb(255, 208, 0);
+    @include page();
+  }
+
+  .ru-drop-container {
+    // 1170區
+    // background-color: rgb(139, 189, 255);
+    margin-bottom: 30px;
+    @include flex($df, $fdr, $jcc, $alc);
+  }
+
+  .ru-drop-warp {
+    // background-color: #fbbafb;
+    width: 1200px;
+    display: flex;
+  }
+
+  .ru-box-container {
+    // background-color: #9acd32;
+    width: 66.185%;
+    @include flex($df, $fdr, $jcc, $alc);
+  }
+
+  .ru-box-warp {
+    // background-color: aqua;
+    width: 100%;
+    position: relative;
+  }
+
+  #ru-hintA {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    opacity: 0.225;
+    top: 14.5%;
+    left: 14%;
+    transform-origin: bottom right;
+    transform: scale(1.365);
+    pointer-events: none;
+  }
+
+  #ru-hintB {
+    width: 16.3%;
+    height: 20%;
+    position: absolute;
+    opacity: 0.225;
+    top: 22.1%;
+    left: 47.8%;
+    transform-origin: bottom right;
+    transform: scale(1.73);
+    pointer-events: none;
+  }
+
+  #ru-hintC {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    opacity: 0.225;
+    top: 14.5%;
+    left: 73.65%;
+    transform-origin: bottom right;
+    transform: scale(1.365);
+    pointer-events: none;
+  }
+
+  #ru-hintD {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    opacity: 0.225;
+    top: 113.5%;
+    left: 74%;
+    transform-origin: bottom right;
+    transform: scale(4.38);
+    pointer-events: none;
+  }
+
+  #ru-hintE {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    opacity: 0.225;
+    top: 50.5%;
+    left: 8.25%;
+    transform-origin: bottom right;
+    transform: scale(0.98);
+    pointer-events: none;
+  }
+
+  #ru-hintF {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    opacity: 0.225;
+    top: 97.25%;
+    left: 73.5%;
+    transform-origin: bottom right;
+    transform: scale(3.275);
+    pointer-events: none;
+  }
+
+  #ru-areaA {
+    // background-color: red;
+    width: 29.5%;
+    height: 38.5%;
+    top: 4%;
+    left: 4.5%;
+    position: absolute;
+    // opacity: 0.5;
+  }
+
+  #ru-areaB {
+    // background-color: rgb(255, 217, 0);
+    width: 29.5%;
+    height: 38.5%;
+    top: 4%;
+    left: 35.325%;
+    position: absolute;
+    // opacity: 0.5;
+  }
+
+  #ru-areaC {
+    // background-color: rgb(38, 255, 0);
+    width: 29.5%;
+    height: 38.5%;
+    top: 4%;
+    left: 66.25%;
+    position: absolute;
+    // opacity: 0.5;
+  }
+
+  #ru-areaD {
+    // background-color: rgb(0, 204, 255);
+    width: 91.25%;
+    height: 50%;
+    top: 45.5%;
+    left: 4.5%;
+    position: absolute;
+    // opacity: 0.5;
+  }
+
+  #ru-areaE {
+    // background-color: rgb(217, 0, 255);
+    width: 19.5%;
+    height: 37%;
+    top: 51%;
+    left: 8.5%;
+    position: absolute;
+    // opacity: 0.5;
+  }
+
+  #ru-areaF {
+    // background-color: rgb(98, 0, 255);
+    width: 65%;
+    height: 33.75%;
+    top: 52%;
+    left: 28%;
+    position: absolute;
+  }
+
+  .ru-put {
+    cursor: grab;
+  }
+
+  .ru-detail-container {
+    // background-color: #fbd7e8;
+    width: 33.815%;
+    height: 100%;
+    margin-left: 50px;
+  }
+
+  .ru-switchBtn-container {
+    // background-color: #a0522d;
+    height: 35px;
+    border-bottom: 1px solid $customBorder;
+    @include flex($df, $fdr, $jcc, $alc);
+  }
+
+  .ru-switchBtn-container button:focus {
+    outline: none;
+  }
+
+  .ru-switchBtn-container button:nth-child(1) {
+    background-color: #ffffff00; // 無背景色
+    border: none;
+    text-align: right;
+    margin-right: 15px;
+    padding: 0px;
+    @include font(
+      $notoSansTC,
+      $minor-heading,
+      $bold,
+      0px,
+      $customSelection-color
+    );
+  }
+
+  .ru-switchBtn-container button:nth-child(2) {
+    background-color: #ffffff00; // 無背景色
+    border: none;
+    text-align: left;
+    margin-left: 15px;
+    padding: 0px;
+    @include font(
+      $notoSansTC,
+      $minor-heading,
+      $bold,
+      0px,
+      $customSelection-color
+    );
+  }
+
+  // 開關開啟
+  .ru-switchBtn-container #ru-active {
+    @include font($notoSansTC, $minor-heading, $bold, 0px, $light-orange);
+  }
+
+  // .ru-info-container {
+  // background-color: palegoldenrod;
+  // }
+
+  .ru-checkout-container {
+    // background-color: powderblue;
+    @include flex($df, $fdc, $jcc, $alc);
+  }
+
+  .ru-checkout-warp {
+    // background-color: rgb(239, 255, 92);
+    margin-top: 28px;
+    @include flex($df, $fdc, $jcc, $alc);
+  }
+
+  .ru-drag-container {
+    // 1170區
+    // background-color: #ffc1bc;
+    @include flex($df, $fdr, $jcc, $alc);
+  }
+
+  .ru-drag-warp {
+    // background-color: rgb(141, 232, 255);
+    width: 100%;
+    border-top: 1px solid $customBorder;
+  }
+
+  .ru-selection-container {
+    // background-color: rgb(126, 71, 255);
+    width: 100%;
+    @include flex($df, $fdr, $jcc, $alc);
+  }
+
+  .ru-selection-warp {
+    // background-color: rgb(255, 194, 89);
+    width: 45.3%;
+    margin: 30px 0px;
+    @include flex($df, $fdr, space-between, $alc);
+  }
+
+  .ru-species-container {
+    // background-color: thistle;
+    width: 100%;
+    height: 160px;
+    @include flex($df, $fdr, space-between, $alc);
+  }
+
+  .ru-selection-warp .ru-buttonB {
+    margin: 0px 10px;
+  }
+
+  .ru-species-warp {
+    // background-color: blue;
+    width: 100%;
+    height: 100%;
+    margin: 0px 50px;
+    overflow: hidden;
+  }
+
+  .ru-species-warp ul {
+    // background-color: #a52a2a;
+    // 寬度數值 = 全部li的總px => 再把總px換成百分比
+    width: 204.275%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    @include flex($df, $fdr, $jcs, $alc);
+  }
+
+  .ru-species-warp li {
+    list-style: none;
+  }
+
+  // #Rectangle_208 {
+  // fill: aquamarine;
+  // }
+
+  // 切換商品區 ----------
+  .ru-custom-containerA {
+    display: block;
+  }
+  .ru-custom-containerC {
+    display: none;
+  }
+}
+// ------------------------------------------- 網頁版 e -------------------------------------------
+
+//  ------------------------------------------- ipad pro版 s -------------------------------------------
+@media screen and (min-width: 768.1px) and (max-width: 1200px) {
+}
+//  ------------------------------------------- ipad pro版 e -------------------------------------------
+
+//  ------------------------------------------- ipad 版 s -------------------------------------------
+@media screen and (min-width: 576.1px) and (max-width: 768px) {
+}
+//  ------------------------------------------- ipad 版 e -------------------------------------------
+
+//  ------------------------------------------- 手機 版 s -------------------------------------------
+@media screen and (max-width: 576px) {
+  .ru-custom-containerC {
+    // 超過設計稿部份
+    // background-color: rgb(0, 185, 71);
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  .ru-custom-containerC > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 1920px;
+  }
+
+  .ru-custom-warp {
+    // 375區
+    // background-color: rgb(255, 208, 0);
+    width: 100%;
+    @include page-phone();
+  }
+
+  .ru-drop-container {
+    // 335區
+    // background-color: rgb(65, 141, 240);
+    height: 235px;
+    @include flex($df, $fdr, $jcc, $alc);
+  }
+
+  .ru-drop-warp {
+    // background-color: #ee82ee55;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .ru-box-container {
+    // background-color: #9acd3288;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid $customBorder;
+    @include flex($df, $fdr, $jcc, $als);
+  }
+
+  .ru-box-warp {
+    width: 100%;
+  }
+
+  .ru-detail-container {
+    // background-color: #ff00bf44;
+    width: 100%;
+  }
+
+  .ru-switchBtn-container {
+    // background-color: #a0522d;
+    height: 35px;
+    border-bottom: 1px solid $customBorder;
+    @include flex($df, $fdr, $jcc, $alc);
+  }
+
+  .ru-switchBtn-container button:focus {
+    outline: none;
+  }
+
+  .ru-switchBtn-container button:nth-child(1) {
+    background-color: #ffffff00;
+    border: none;
+    text-align: right;
+    margin-right: 15px;
+    padding: 0px;
+    @include font($notoSansTC, $minor-heading, $bold, 0px, $light-orange);
+  }
+
+  .ru-switchBtn-container button:nth-child(2) {
+    background-color: #ffffff00;
+    border: none;
+    text-align: left;
+    margin-left: 15px;
+    padding: 0px;
+    @include font(
+      $notoSansTC,
+      $minor-heading,
+      $bold,
+      0px,
+      $customSelection-color
+    );
+  }
+
+  .ru-info-container {
+    // background-color: palegoldenrod;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .ru-info-item-container {
+    // background-color: purple;
+    height: 255px;
+    @include flex($df, $fdc, $jcc, $alc);
+  }
+
+  .ru-info-item-warp {
+    // background-color: #00ff7f55;
+    width: 90%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    @include flex($df, $fdc, $jce, $alc);
+  }
+
+  .ru-info-item {
+    // background-color: #0077ff55;
+    width: 100%;
+    height: 22px;
+    margin-top: 20px;
+    @include flex($df, $fdr, $jcc, $alc);
+  }
+
+  .ru-category-container {
+    border: 1px solid $customSelection-color;
+    width: 14%;
+    height: 100%;
+    margin-right: 20px;
+    @include flex($df, $fdr, $jcc, $alc);
+  }
+
+  .ru-category {
+    margin: 0px;
+    @include font($notoSansTC, $content, $regular, 0px, $customSelection-color);
+    // 字體, 字體大小, 字重, 字距, 字色
+  }
+
+  .ru-selectionName {
+    width: 62.5%;
+    height: 100%;
+    margin: 0px;
+    @include font($notoSansTC, $productName-size, $regular, 1.25px, $grey);
+    @include flex($df, $fdr, $jcs, $alc);
+  }
+
+  .ru-number {
+    width: 18.52%;
+    height: 100%;
+    margin: 0px;
+    @include font(
+      $notoSansTC,
+      $productName-size,
+      $regular,
+      1.25px,
+      $light-orange
+    );
+    @include flex($df, $fdr, $jce, $alc);
+  }
+
+  .ru-info-total-container {
+    // background-color: #80002b22;
+    height: 45px;
+    @include flex($df, $fdr, $jcc, $ale);
+  }
+
+  .ru-info-total-warp {
+    // background-color: rgb(130, 229, 238);
+    height: 30px;
+    width: 90%;
+    @include flex($df, $fdr, $jce, $ale);
+  }
+
+  .ru-info-total-warp > h3 {
+    width: 62%;
+    margin: 0px;
+    @include font(
+      $notoSansTC,
+      $minor-heading,
+      $medium,
+      0px,
+      $productName-Color
+    );
+  }
+
+  .ru-info-total-warp > p {
+    width: 18.52%;
+    margin: 0px;
+    @include font($notoSansTC, $minor-heading, $bold, 0px, $light-orange);
+    @include flex($df, $fdr, $jce, $ale);
+  }
+
+  .ru-info-total {
+    // background-color: seagreen;
+    height: 30px;
+    margin-top: 15px;
+  }
+
+  .ru-checkout-container {
+    // background-color: powderblue;
+    @include flex($df, $fdc, $jcc, $alc);
+  }
+
+  .ru-checkout-warp {
+    // background-color: rgb(239, 255, 92);
+    width: 170px;
+    height: 100%;
+    @include flex($df, $fdc, $jcc, $alc);
+  }
+
+  .ru-isCanBuy {
+    width: 100%;
+    pointer-events: none;
+    filter: 'grayscale(100%)';
+  }
+
+  .ru-checkout-warp .counter-box {
+    width: 100%;
+  }
+
+  .ru-checkout-warp .addCart-btn-warp .addCart-btn {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .ru-drag-container {
+    // 1170區
+    // background-color: #f05041;
+    @include flex($df, $fdr, $jcc, $alc);
+  }
+
+  .ru-drag-warp {
+    // background-color: rgb(29, 198, 240);
+    width: 100%;
+  }
+
+  .ru-selection-container {
+    // background-color: rgb(126, 71, 255);
+    width: 100%;
+    display: block;
+  }
+
+  .ru-selection-warp {
+    // background-color: rgb(255, 194, 89);
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    @include flex($df, $fdc, space-between, $alc);
+  }
+
+  .ru-selectionBtn-warp1 {
+    margin-bottom: 20px;
+  }
+
+  .ru-selectionBtn-warp1 .ru-buttonB:nth-child(1) {
+    margin-right: 15px;
+  }
+
+  .ru-selectionBtn-warp1 .ru-buttonB:nth-child(2) {
+    margin-left: 15px;
+  }
+
+  .ru-selectionBtn-warp2 .ru-buttonB:nth-child(1) {
+    margin-right: 15px;
+  }
+
+  .ru-selectionBtn-warp2 .ru-buttonB:nth-child(2) {
+    margin-left: 15px;
+  }
+
+  .ru-species-container {
+    // background-color: thistle;
+    width: 100%;
+    height: 345px;
+    margin-bottom: 60px;
+    @include flex($df, $fdr, $jcc, $alc);
+  }
+
+  .ru-species-container .arrowRight-warp {
+    width: 60px;
+  }
+
+  .ru-species-container .arrowLeft-warp {
+    width: 60px;
+  }
+
+  .ru-species-warp {
+    // background-color: blue;
+    height: 100%;
+    width: 216.5px;
+    overflow: hidden;
+  }
+
+  .ru-species-warp ul {
+    // background-color: #a52a2a88;
+    // 寬度數值 = 250 * n個li px => 再把px換成百分比
+    width: 1250px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    @include flex($df, $fdr, $jcs, $als);
+  }
+
+  .ru-species-warp li {
+    // background-color: yellow;
+    height: 100%;
+    list-style: none;
+    // 合計250px
+    width: 216.5px;
+    margin-right: 33.5px;
+    @include flex($df, $fdc, $jcc, $alc);
+  }
+
+  .ru-species-img {
+    // background-color: darkolivegreen;
+    width: 77.5px;
+  }
+
+  .ru-species-item {
+    // 這邊負責左右平移
+    // transform: translate(-50px);
+  }
+
+  .ru-species-info {
+    // background-color: darkorange;
+    width: 100%;
+  }
+
+  .ru-species-info ul {
+    // background-color: deepskyblue;
+    width: 100%;
+    @include flex($df, $fdc, $jcc, $alc);
+  }
+
+  .ru-species-info ul li:nth-child(1) {
+    width: 100%;
+  }
+
+  .ru-species-info ul li:nth-child(2),
+  .ru-species-info ul li:nth-child(3),
+  .ru-species-info ul li:nth-child(4),
+  .ru-species-info ul li:nth-child(5) {
+    width: 150px;
+    margin: 5px 0px;
+  }
+
+  .ru-species-info ul li {
+    display: block;
+    text-align: center;
+  }
+
+  .ru-species-info ul h4 {
+    // background-color: hotpink;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    @include flex($df, $fdc, $jcc, $alc);
+    @include font(
+      $notoSansTC,
+      $minor-heading,
+      $regular,
+      1.25px,
+      $productName-Color
+    );
+  }
+
+  .ru-species-info ul h4 span {
+    margin: 5px;
+    @include font($notoSansTC, $minor-heading, $bold, 1.25px, $light-orange);
+  }
+
+  .ru-species-info ul li {
+    // background-color: deeppink;
+    width: 100%;
+    margin: 0px;
+    @include font($notoSansTC, $content, $regular, 1.25px, $grey);
+  }
+
+  .ru-species-btn {
+    height: 75px;
+    @include flex($df, $fdc, $jcc, $alc);
+  }
+
+  // 切換商品區 ----------
+
+  .ru-custom-containerA {
+    display: none;
+  }
+  .ru-custom-containerC {
+    display: block;
+  }
+}
+//  ------------------------------------------- 手機 版 e -------------------------------------------

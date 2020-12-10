@@ -1,0 +1,261 @@
+.iris-menu-background {
+  background-color: #f7ede2;
+  width: 24.2rem;
+  height: calc(100vh-15rem);
+  // position: fixed;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iris-profile-photo {
+  background-color: #f6dcb3;
+  width: 13.2rem;
+  height: 13.2rem;
+  border-radius: 6.6rem;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.iris-brief-info-wraper {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  width: auto;
+}
+
+.iris-user-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #7e7666;
+  // color: #404040;
+  margin-top: 1.5rem;
+}
+
+.iris-brief-info {
+  font-size: 1.5rem;
+  color: rgb(134, 134, 134);
+  width: 7.5rem;
+}
+
+@media(max-width:992px){
+.iris-brief-info {
+  font-size: 1.3rem;
+  color: rgb(134, 134, 134);
+  width: 6.3rem;
+}}
+
+.iris-vl {
+  border-left: 0.1rem solid rgb(134, 134, 134);
+}
+
+.iris-menu-item {
+  height: 7.3rem;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.iris-menu-item:hover {
+  background-color: #f5a016;
+  transition: 0.6s;
+  -webkit-box-shadow: 0px 10px 14px 0px rgba(176, 147, 135, 1);
+  -moz-box-shadow: 0px 10px 14px 0px rgba(176, 147, 135, 1);
+  box-shadow: 0px 10px 14px 0px rgba(176, 147, 135, 1);
+  cursor: pointer;
+}
+
+.iris-menu-item:hover .iris-menu-icon {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.iris-menu-item:hover .iris-menu-text {
+  color: white;
+}
+
+.iris-menu-hr {
+  border-top: 0.1rem solid #decdbb;
+  width: 20rem;
+}
+
+.iris-mune-item-wrapper {
+  justify-content: center;
+}
+
+.iris-menu-icon {
+  // fill: #A59583;
+  // stroke: #A59583;
+  stroke: #a59583;
+  fill: #a59583;
+  position: absolute;
+  left: 15%;
+}
+.iris-menu-text {
+  color: #a59583;
+  font-size: medium;
+  font-size: 1.8rem;
+  position: absolute;
+  left: 40%;
+}
+
+.iris-membermenu-container {
+  margin-top: 15rem;
+  max-width: 117rem;
+  // min-height: 100vh;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 992px) {
+  .iris-menu-background {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .iris-membermenu-container {
+    display: none;
+  }
+}
+
+// RWD mobile
+.iris-membermenu-container-mobile {
+  margin-top: 15rem;
+  width: 100%;
+  height: 24.5rem;
+  background-color: #fff;
+}
+
+@media (max-width: 576px) {
+  .iris-membermenu-container-mobile {
+    display: block;
+    height: 100%;
+  }
+}
+
+@media (min-width: 577px) {
+  .iris-membermenu-container-mobile {
+    display: none;
+  }
+}
+
+.iris-profile-background-mobile {
+  width: 100%;
+  height: 11.5rem;
+  background: rgb(245, 160, 22);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 160, 22, 1) 0%,
+    rgba(246, 189, 96, 1) 100%
+  );
+  padding-top: 3rem;
+}
+
+.iris-profile-pic-circle {
+  width: 14.2rem;
+  height: 14.2rem;
+  border-radius: 7.1rem;
+  // margin-top:6rem;
+  margin-left: 2.3rem;
+  background-color: #f6dcb3;
+  border: 0.6rem solid white;
+  padding-left: 2.9rem;
+  padding-top: 1.6rem;
+}
+
+.iris-profile-info {
+  width: auto;
+  height: auto;
+  // background-color: #faf;
+  margin-top: 5rem;
+  margin-left: 1.5rem;
+}
+
+.iris-profile-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.iris-brief-info-mobile {
+  font-size: 1.5rem;
+  color: rgb(134, 134, 134);
+  min-width: 8rem;
+}
+
+.iris-brief-info-wraper-mobile {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: -1rem;
+}
+
+.iris-member-dropdown-title {
+  // background-color: #faf;
+  height: 2rem;
+  width: 100%;
+  margin-top: 8.5rem;
+  margin-bottom: 0.8rem;
+  color: #a59583;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.iris-member-dropdown-title:hover {
+  cursor: pointer;
+}
+
+.iris-menu-waveline {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 30;
+}
+
+.iris-menu-waveline #Group_5703 {
+  fill: #fff;
+  // fill: #f7ede2;
+}
+
+.iris-menu-waveline #Rectangle_241 {
+  fill: #fff;
+  // fill: #f7ede2;
+}
+
+.iris-menu-waveline #Group_50 {
+  fill: #fff;
+}
+
+.iris-mune-item-wrapper-mobile {
+  margin-top: -0.9rem;
+  // display: flex;
+  flex-wrap: wrap;
+  display: none;
+  background-color: #f7ede2;
+}
+
+.iris-menu-item-mobile {
+  height: 4rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #a59583;
+  font-size: 1.8rem;
+  background-color: #f7ede2;
+}
+
+.iris-menu-item-mobile:hover {
+  cursor: pointer;
+  color: #f5a016;
+}
+
+.iris-menu-text-mobile {
+  text-align: center;
+}
+
+.iris-menu-hr-mobile {
+  border-top: 0.1rem solid #decdbb;
+  width: 100%;
+}

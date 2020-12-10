@@ -1,0 +1,434 @@
+@import 'Ru/Pages/variable.scss';
+// 以下開始自訂CSS
+.ru-buttonWarpA {
+  // background-color: rgb(30, 236, 255);
+  width: 80.8%;
+  height: 64px;
+  margin-top: 50px;
+  @include flex($df, $fdr, space-between, $alc);
+}
+
+.ru-buttonWarpA .button-btn:nth-child(1) {
+  margin-right: 10px;
+}
+
+.ru-buttonWarpA .button-btn:nth-child(2),
+.button-btn:nth-child(3) {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.ru-buttonWarpA .button-btn-g {
+  margin-left: 10px;
+}
+
+button:focus,
+input {
+  outline: none;
+}
+
+.ru-mainImg-warp {
+  position: relative;
+}
+
+.ru-mainImg-warp > h1 {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include font(
+    // 字體, 字體大小, 字重, 字距, 字色
+    $notoSansTC,
+    $sub-title,
+    $regular,
+    2.5px,
+    $white
+  );
+}
+
+.ru-mainImg {
+  height: 362px;
+  background-image: url('./Images/mainImg.jpg');
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-size: cover;
+  @include flex($df, $fdr, $jcc, $alc);
+  filter: brightness(0.5);
+}
+
+.ru-searchBar {
+  width: 43.76%;
+  height: 50px;
+  border: 1px solid $grey;
+  border-radius: 9999px;
+  padding: 0px 20px;
+  @include font(
+    // 字體, 字體大小, 字重, 字距, 字色
+    $notoSansTC,
+    $minor-heading,
+    $regular,
+    0px,
+    $light-orange
+  );
+}
+
+.ru-optionWarp {
+  // background-color: dodgerblue;
+  color: white;
+  height: 324px;
+  @include page();
+  @include flex($df, $fdc, $jcc, $alc);
+}
+
+.ru-optionWarp .iris-input-field {
+  width: 512px;
+  height: 50px;
+}
+
+.ru-line {
+  // background-color: red;
+  width: 100%;
+  @include flex($df, $fdr, $jcc, $als);
+  overflow: hidden;
+}
+
+.ru-line > img {
+  height: 8px;
+}
+
+// 響應式 --------------------------------------------------------------------------------
+// ipad pro版
+@media screen and (min-width: 768.1px) and (max-width: 1200px) {
+  .ru-optionWarp {
+    @include page-iPadPro();
+  }
+
+  button:focus,
+  input {
+    outline: none;
+  }
+
+  .ru-mainImg-warp {
+    position: relative;
+  }
+
+  .ru-mainImg-warp > h1 {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include font(
+      // 字體, 字體大小, 字重, 字距, 字色
+      $notoSansTC,
+      $sub-title,
+      $regular,
+      2.5px,
+      $white
+    );
+  }
+
+  .ru-mainImg {
+    height: 362px;
+    background-image: url('./Images/mainImg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    @include flex($df, $fdr, $jcc, $alc);
+    filter: brightness(0.5);
+  }
+
+  .ru-searchBar {
+    width: 43.76%;
+    height: 50px;
+    border: 1px solid $grey;
+    border-radius: 9999px;
+    padding: 0px 20px;
+    @include font(
+      // 字體, 字體大小, 字重, 字距, 字色
+      $notoSansTC,
+      $minor-heading,
+      $regular,
+      0px,
+      $light-orange
+    );
+  }
+
+  .ru-optionWarp {
+    // background-color: dodgerblue;
+    color: white;
+    height: 324px;
+    @include page-iPadPro();
+    @include flex($df, $fdc, $jcc, $alc);
+  }
+
+  .ru-optionWarp .iris-input-field {
+    width: 512px;
+    height: 50px;
+  }
+
+  .ru-buttonWarpA {
+    // background-color: rgb(30, 236, 255);
+    width: 110%;
+    height: 64px;
+    margin-top: 50px;
+    @include flex($df, $fdr, space-between, $alc);
+  }
+
+  .ru-buttonWarpA .button-btn:nth-child(1) {
+    margin-right: 10px;
+  }
+
+  .ru-buttonWarpA .button-btn:nth-child(2),
+  .button-btn:nth-child(3) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .ru-buttonWarpA .button-btn-g {
+    margin-left: 10px;
+  }
+
+  .ru-line {
+    // background-color: red;
+    width: 100%;
+    height: 90px;
+    @include flex($df, $fdr, $jcc, $als);
+    overflow: hidden;
+  }
+
+  .ru-line > img {
+    height: 8px;
+  }
+}
+
+// ipad 版
+@media screen and (min-width: 576.1px) and (max-width: 768px) {
+  .ru-optionWarp {
+    @include page-iPad();
+  }
+
+  button:focus,
+  input {
+    outline: none;
+  }
+
+  .ru-mainImg-warp {
+    position: relative;
+  }
+
+  .ru-mainImg-warp > h1 {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include font(
+      // 字體, 字體大小, 字重, 字距, 字色
+      $notoSansTC,
+      $sub-title,
+      $regular,
+      2.5px,
+      $white
+    );
+  }
+
+  .ru-mainImg {
+    height: 362px;
+    background-image: url('./Images/mainImg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    @include flex($df, $fdr, $jcc, $alc);
+    filter: brightness(0.5);
+  }
+
+  .ru-searchBar {
+    width: 43.76%;
+    height: 50px;
+    border: 1px solid $grey;
+    border-radius: 9999px;
+    padding: 0px 20px;
+    @include font(
+      // 字體, 字體大小, 字重, 字距, 字色
+      $notoSansTC,
+      $minor-heading,
+      $regular,
+      0px,
+      $light-orange
+    );
+  }
+
+  .ru-optionWarp {
+    // background-color: dodgerblue;
+    color: white;
+    height: 324px;
+    @include page-iPadPro();
+    @include flex($df, $fdc, $jcc, $alc);
+  }
+
+  .ru-optionWarp .iris-input-field {
+    width: 512px;
+    height: 50px;
+  }
+
+  .ru-buttonWarpB {
+    // background-color: rgb(30, 236, 255);
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .ru-buttonWarpB div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ru-buttonWarpB div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .ru-buttonWarpB div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ru-buttonWarpB div .button-btn {
+    margin: 0px 20px;
+  }
+
+  .ru-buttonWarpB div .button-btn-g {
+    margin: 0px 20px;
+  }
+
+  .ru-line {
+    // background-color: red;
+    width: 100%;
+    height: 90px;
+    @include flex($df, $fdr, $jcc, $als);
+    overflow: hidden;
+  }
+
+  .ru-line > img {
+    height: 8px;
+  }
+}
+
+// 手機版
+@media screen and (max-width: 576px) {
+  button:focus,
+  input {
+    outline: none;
+  }
+
+  .ru-mainImg-warp {
+    position: relative;
+  }
+
+  .ru-mainImg-warp > h1 {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    @include font(
+      // 字體, 字體大小, 字重, 字距, 字色
+      $notoSansTC,
+      $rwd-main-title,
+      $regular,
+      $letter-spacing,
+      $white
+    );
+  }
+
+  .ru-mainImg {
+    height: 365px;
+    background-image: url('./Images/mainImg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    position: relative;
+    @include flex($df, $fdr, $jcc, $alc);
+    filter: brightness(0.5);
+  }
+
+  .ru-searchBar {
+    width: 100%;
+    height: 45px;
+    border: 1px solid $grey;
+    border-radius: 9999px;
+    padding: 0px 20px;
+    @include font(
+      // 字體, 字體大小, 字重, 字距, 字色
+      $notoSansTC,
+      $minor-heading,
+      $regular,
+      0px,
+      $light-orange
+    );
+  }
+
+  .ru-optionWarp {
+    // background-color: dodgerblue;
+    color: white;
+    height: 257px;
+    @include page-phone();
+    @include flex($df, $fdc, $jcc, $alc);
+  }
+
+  .ru-optionWarp .iris-input-field {
+    width: 335px;
+    height: 45px;
+  }
+
+  .ru-buttonWarpB {
+    // background-color: rgb(30, 236, 255);
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .ru-buttonWarpB .button-btn {
+    width: 123px;
+    height: 41px;
+  }
+
+  .ru-buttonWarpB .button-btn-g {
+    width: 123px;
+    height: 41px;
+  }
+
+  .ru-buttonWarpB div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ru-buttonWarpB div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .ru-buttonWarpB div .button-btn {
+    margin: 0px 14px;
+  }
+
+  .ru-buttonWarpB div .button-btn-g {
+    margin: 0px 14px;
+  }
+
+  .ru-line {
+    // background-color: red;
+    width: 100%;
+    height: 70px;
+    @include flex($df, $fdr, $jcc, $als);
+    overflow: hidden;
+  }
+
+  .ru-line > img {
+    height: 8px;
+  }
+}
