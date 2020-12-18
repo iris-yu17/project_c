@@ -121,6 +121,10 @@ function IrisLoginCard(props) {
       let currentUserStorage = parseInt(memberSid[0]);
       localStorage.setItem('currentUser', currentUserStorage);
 
+      // 清空input
+      document.querySelector('#useraccount').value = '';
+      document.querySelector('#userpassword').value = '';
+
       setCurrentUserData(o[0]);
       console.log('current', memberSid[0]);
       setShowLoginModal(false); // 登入光箱消失
